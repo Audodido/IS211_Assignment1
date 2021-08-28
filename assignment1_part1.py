@@ -1,4 +1,3 @@
-#Assignment_Part_1
 
 #Create a function named listDivide that returns the number of elements in the numbers list that are divisible 
 #by divide
@@ -27,3 +26,5 @@ def testListDivide():
         raise ListDivideException()
 
 testListDivide()
+
+
