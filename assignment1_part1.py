@@ -1,20 +1,35 @@
 
-#Create a function named listDivide that returns the number of elements in the numbers list that are divisible 
-#by divide
+#Create a function named listDivide that returns the number of elements in the numbers list that are divisible by 2
 
-# list1 = [1,3,5,6,8,9,12,6,7,78,24,55,23,16,88]
 
 class ListDivideException(Exception):
     pass
 
+
 def listDivide(numbers, divide=2):
+
+    """
+    Returns number of elements in the numbers list that are divisible by another number (default=2)
+
+    Args:
+        numbers (list): List of numbers to check 
+        divide (int): Number to divide elements in list by
+
+    Returns:
+        Sum (int) of instances where list element was divisible by "divide"
+    """
+
     try:
         list2 = [i for i in numbers if i % divide ==0]
         return len(list2)
     except:
         raise ListDivideException()
 
+
 def testListDivide():
+    """
+    Tests listDivide function for errors
+    """
     try:
         listDivide([1,2,3,4,5])
         listDivide([2,4,6,8,10])
@@ -24,6 +39,8 @@ def testListDivide():
         # print("Success!") 
     except:
         raise ListDivideException()
+
+
 
 testListDivide()
 
