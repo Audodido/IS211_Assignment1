@@ -41,7 +41,6 @@ def testListDivide():
         raise ListDivideException()
 
 
-
 testListDivide()
 
 
