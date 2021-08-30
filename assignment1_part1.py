@@ -40,7 +40,7 @@ def testListDivide():
     except:
         raise ListDivideException()
 
-
-testListDivide()
+if __name__ == "__main__":
+    testListDivide()
 
 
